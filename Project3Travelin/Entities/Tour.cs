@@ -1,7 +1,12 @@
-﻿namespace Project3Travelin.Entities
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Project3Travelin.Entities
 {
     public class Tour
     {
+        [BsonId] //mssql de primary key olarak düşünülebilir
+        [BsonRepresentation(BsonType.ObjectId)] 
         public string TourId { get; set; }
         public string Title { get; set; }
         public string Country { get; set; }

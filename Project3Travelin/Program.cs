@@ -11,7 +11,7 @@ builder.Services.AddScoped<ICommentService, CommentService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ITourService, TourService>();
 
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());  
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());  //gözden kaçýrdýðýmýz mapp leme iþlemini yapar.
 
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettingsKey"));
 
