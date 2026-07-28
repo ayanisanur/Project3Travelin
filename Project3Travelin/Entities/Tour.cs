@@ -12,6 +12,10 @@ namespace Project3Travelin.Entities
         public string Country { get; set; }
         public string City { get; set; }
         public string Description { get; set; }
+        public string ImageUrl { get; set; }
+
+        [BsonRepresentation(BsonType.Decimal128)] // MongoDB'de hassas verili sayısal/parasal format için
+        public decimal Price { get; set; }
         public int Capacity { get; set; }
         public DateTime TourDate { get; set; }
         public string DayNight { get; set; }  // 3 gece 5 gün gibi ifadeler için

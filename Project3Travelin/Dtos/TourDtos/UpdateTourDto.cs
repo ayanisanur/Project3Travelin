@@ -10,5 +10,7 @@
         public int Capacity { get; set; }
         public DateTime TourDate { get; set; }
         public string DayNight { get; set; }  // 3 gece 5 gün gibi ifadeler için
+        public decimal Price { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
